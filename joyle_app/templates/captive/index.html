@@ -1,0 +1,12 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    {% for transport in transports %}
+        <div class="content">
+            <h1> {{ transport.mark }} </h1>
+            <p>{{ transport.description }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
