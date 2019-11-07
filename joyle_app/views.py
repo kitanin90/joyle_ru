@@ -4,5 +4,5 @@ from .models import *
 
 
 def post_transport(request):
-    transport = Transport.objects.filter()
-    return render(request, 'captive/index.html', {})
+    transports = Transport.objects.all()
+    return render(request, 'captive/index.html', {'transports': transports})

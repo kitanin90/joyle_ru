@@ -1,0 +1,58 @@
+/*.container-fluid {*/
+/*    padding-left: 0px;*/
+/*    padding-right: 0px;*/
+/*}*/
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Верхнее меню с выбором города*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 5px auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Navigation*/
+
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nav__link {
+    margin-left: 58px;
+    color: #2d4062;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+    background-color: #ffeeea;
+    color: #ff8367;
+    padding: 1px 5px 1px 5px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.nav__link:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Search and navigation */
+

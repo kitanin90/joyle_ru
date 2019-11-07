@@ -10,7 +10,7 @@ class Client(models.Model):
     email = models.CharField(max_length=64, unique=True, verbose_name="Почта")
 
     def fullname(self):
-        return '{}{}{}'.format(self.lastname, self.firstname, self.patronymic)
+        return '{} {} {}'.format(self.lastname, self.firstname, self.patronymic)
 
     def __str__(self):
         return self.fullname
@@ -22,7 +22,7 @@ class Client(models.Model):
 
 class Store(models.Model):
     name = models.CharField(max_length=255, blank=True, verbose_name="Название")
-    verification = models.BooleanField()
+    verification = models.BooleanField(verbose_name="Верификация")
     description = models.TextField(blank=True, verbose_name="Описание")
 
     def __str__(self):
@@ -97,7 +97,6 @@ class SubcategElect(models.Model):
     class Meta:
         verbose_name = 'Подкатег электроники'
         verbose_name_plural = 'Подкатег электроники'
-
 
 
 class Electronics(models.Model):
@@ -285,6 +284,7 @@ class Animal(models.Model):
         verbose_name = 'Животные'
         verbose_name_plural = 'Животные'
 
+
 # Категория Бизнеса
 class SubBusiness(models.Model):
     nameSubAnimal = models.CharField(max_length=255, blank=True, verbose_name="Название подкатегории")
@@ -295,6 +295,7 @@ class SubBusiness(models.Model):
     class Meta:
         verbose_name = 'Подкатег бизнеса'
         verbose_name_plural = 'Подкатег бизнеса'
+
 
 class ForBusiness(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Категория")
