@@ -17,6 +17,13 @@
     margin: 5px auto;
 }
 
+#local-people {
+    color: blue;
+    padding: 1px 5px 1px 5px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -33,7 +40,7 @@
 }
 
 .nav__link {
-    margin-left: 58px;
+    margin-left: 38px;
     color: #2d4062;
     text-decoration: none;
     opacity: .75;
@@ -44,7 +51,7 @@
     margin-left: 0;
     background-color: #ffeeea;
     color: #ff8367;
-    padding: 1px 5px 1px 5px;
+    padding: 1px 10px 1px 10олpx;
     border-radius: 15px;
     opacity: 1;
 }
@@ -56,3 +63,6 @@
 
 /* Search and navigation */
 
+.navbar {
+    background-color: #bde4ff;
+}

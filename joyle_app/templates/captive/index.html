@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="location">
-                     <i class="fas fa-street-view"> Москва</i>
+                    <i class="fas fa-street-view" id="local-people"></i> <i>Москва</i>
                 </div>
 
                 <nav class="nav">
@@ -27,30 +27,46 @@
         </div>
     </header>
 
+
+
     {# Search and navigation #}
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">Joyle</a>
+    <header class="top__header">
+        <div class="container">
+            <div class="top_header_top">
+                <div class="logo">
 
-            {# Адаптация под телефоны #}
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            {# Список выпадающий #}
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Главная
-                        </a>
-                    </li>
-                </ul>
-
+                </div>
             </div>
-
         </div>
-    </nav>
-
+    </header>
 
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# Адаптация под телефоны #}
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+{# Список выпадающий #}
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                Главная
+            </a>
+        </li>
+    </ul>
+
+</div>
